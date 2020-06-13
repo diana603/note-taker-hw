@@ -7,7 +7,11 @@
 
 //export router 
 
-const express = require("express");
-const app = express();
-app.get('/', (req, res) => res.sendFile("../public/index.html"));
+//const express = require("express");
+//const app = express();
+function htmlRoutes(app) {
+    app.get('/notes', (req, res) => res.sendFile("./public/notes.html"));
+
+}
+module.exports = htmlRoutes;
 
