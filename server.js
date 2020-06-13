@@ -1,7 +1,7 @@
 // copy pasted code from daves class example// 
 const express = require('express');
 const app = express();
-const PORT = 9080;  //const PORT = process.env.PORT || 3000; will need to change to this 
+const PORT = process.env.PORT || 9080;  //const PORT = process.env.PORT || 3000; will need to change to this 
 const path = require('path');
 const root = { root: path.join(__dirname, "/public") };
 //const htmlRoutes = require('./routes/htmlRoutes.js');
